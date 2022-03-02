@@ -137,5 +137,11 @@ public class Main {
         // 1. Find out what happens when 6 is less than 9 and is compared to 9  greater than 2. ( AND)
         // 2. Find out what happens when 5 is greater than 9  and is compared to 8 less than 3. ( OR)
         // 3. ... what happens when 8 is equal to 2 and 7 is less than 6. ( AND)
+
+        // Java Conventions regarding naming.
+        // You can't use keywords as names. e.g you can't use
+        // 'int' as a variable name.
+        // variables & method - incrementOne, birdSound, numberOfWings.
+        // class - IncrementOne, BirdSound, NumberOfWings.
     }
 }
