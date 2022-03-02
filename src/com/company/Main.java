@@ -27,7 +27,7 @@ public class Main {
         // classes
 
         // Variables and Datatypes
-        // Primitive Values
+        // Numeric Primitive Types
         // byte
         // short
         // int
@@ -35,7 +35,9 @@ public class Main {
         // float // has a max of 7 decimal places
         // double // has a max of 15 decimal places.
 
-        // char
+        // Non-numeric primitives
+        // char - characters.
+        // boolean - true or false values
 
         // Complex Objects
         // Strings
@@ -65,15 +67,15 @@ public class Main {
 
         // Arithmetic Operators include:
         // + - Addition
-        System.out.println("Addition of number and value is: " + (number + value));
+//        System.out.println("Addition of number and value is: " + (number + value));
         // - - Subtraction
-        System.out.println("Substraction of number and value is: " + (number - value));
+//        System.out.println("Substraction of number and value is: " + (number - value));
         // / - Division
-        System.out.println("Division of number and value is: " + (number / value));
+//        System.out.println("Division of number and value is: " + (number / value));
         // * - Multiplication
-        System.out.println("Multiplication of number and value is: " + (number * value));
+//        System.out.println("Multiplication of number and value is: " + (number * value));
         // % - Modulus (It divides the values and returns the remainder) e.g 2 % 2 -> 0
-        System.out.println("Modulus of number and value is: " + (number % value));
+//        System.out.println("Modulus of number and value is: " + (number % value));
 
         // = Assignment
 
@@ -82,5 +84,58 @@ public class Main {
 
         // Our first Java program
 //        System.out.println("Hello World!");
+
+        // Task 10 mins
+        // Imagine you are writing a personal fitness program that stores the user's age,
+        // gender, height (in feet or meters). and weight (to the nearest pound or kilogram).
+        // Declare and initialize variables with the appropriate names and types to hold
+        // the information.
+
+        // Type conversion
+        // Java allows you to IMPLICITLY convert from a smaller data type to a bigger one,
+        // but not the other way round.
+        // For you to convert from bigger to smaller you must do it EXPLICITLY. This is called
+        // CASTING.
+        // smaller -> bigger
+/*
+        int five = 5;
+        long newValue = five;
+
+        // bigger -> smaller
+        long six = 6;
+        int  intValue = (int)six;
+
+        double deciNumber = 6.892323323;
+        System.out.println("Double value: " + deciNumber);
+        int truncatedValue = (int)deciNumber;
+        System.out.println("Integer version: " + truncatedValue);
+*/
+
+        boolean bool = true;
+        boolean loob = 8 > 5;
+
+        // A boolean is simply a statement or expression that results in true or false.
+        // Relational operators:
+        // > - Greater than - If the value on the left is greater than the one on the right.
+        // < - Less than - If the value on the left is less than the one on the right.
+        // == - equals to - If the value on the left is equal to the one on the right.
+        // >= - Greater than or equals to. - If the value on the left is greater than or equal to the one on the right.
+        // <= - Less than or equals to. - If the value on the left is less than or equal to the one on the right.
+
+        //System.out.println(5 == 9); // false
+        //System.out.println(9 <= 19); // true
+
+        // Logical operators:
+        // && - AND operator -
+       // System.out.println(5 < 8 && 8 < 3); // && only returns true if both expressions evaluate to true.
+
+        // || - OR operator -
+        // System.out.println(5 > 8 || 8 > 3); // || only returns false if both expressions evaluate to false.
+
+        // Task:
+        // Evaluate the following expressions using relational and logical operators
+        // 1. Find out what happens when 6 is less than 9 and is compared to 9  greater than 2. ( AND)
+        // 2. Find out what happens when 5 is greater than 9  and is compared to 8 less than 3. ( OR)
+        // 3. ... what happens when 8 is equal to 2 and 7 is less than 6. ( AND)
     }
 }
