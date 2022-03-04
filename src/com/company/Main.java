@@ -119,6 +119,7 @@ public class Main {
         // > - Greater than - If the value on the left is greater than the one on the right.
         // < - Less than - If the value on the left is less than the one on the right.
         // == - equals to - If the value on the left is equal to the one on the right.
+        // != - Not equals to - If the value on the left is not equal to the one on the right.
         // >= - Greater than or equals to. - If the value on the left is greater than or equal to the one on the right.
         // <= - Less than or equals to. - If the value on the left is less than or equal to the one on the right.
 
