@@ -77,12 +77,57 @@ public class StringExtendedAndArrays {
 
 
 
-        Pattern pattern = Pattern.compile("a+[bc]+"); // Pattern checker
+//        Pattern pattern = Pattern.compile("a+[bc]+"); // Pattern checker
+//
+//        Matcher matcher = pattern.matcher("aaaaacd"); // String to check
+//        Matcher matcher2 = pattern.matcher("boogieboy109"); // String to check
+//        System.out.println(matcher.matches()); // This returns true if they match and false if not.
+//        System.out.println(matcher2.matches()); // This returns true if they match and false if not.
 
-        Matcher matcher = pattern.matcher("aaaaacd"); // String to check
-        Matcher matcher2 = pattern.matcher("boogieboy109"); // String to check
-        System.out.println(matcher.matches()); // This returns true if they match and false if not.
-        System.out.println(matcher2.matches()); // This returns true if they match and false if not.
+        // Tasks:
+        // Task 1: 15 mins
+        // Write a program that accepts a string from the user and returns
+        // the number of vowels that can be found in that string.
+        // For example: If the user enters the string, "Bodacious" -> 5
+        // Caveat: Make your program interactive.
 
+        // Task 2: 15 mins
+        // Write a program that accepts 5 numbers from a user AS STRINGS.
+        // DO NOT USE THE nextInt() method.
+        // Add the first two numbers and subtract the second two numbers and
+        // multiply the result of the calculation above, then
+        // divide the result by the last number and print interactively.
+        // 5, 4, 3, 2, 1 -> 5 + 4
+        // 3 - 2
+        //
+
+        // Prompt the user for a string
+        System.out.print("Please enter a string: ");
+        String inputString = scanner.nextLine();
+
+        //initialize a counter variable to count the vowel occurrences.
+        int counter = 0;
+        for (int i = 0; i < inputString.length(); i++) {
+            char currentLetter = inputString.toLowerCase().charAt(i); // The current letter we are checking.
+            switch (currentLetter) {
+                case 'a':
+                case 'e':
+                    counter--;
+                    break;
+                case 'i':
+                case 'o':
+
+                case 'u':
+                    counter++;
+                    break;
+//                default:
+//                    System.out.println("Not a vowel");
+//                    break;
+            }
         }
+
+        System.out.println("The number of vowels in the string is: " + counter);
+        }
+
+        //
 }
