@@ -1,10 +1,8 @@
 package com.company;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
-public class StringExtendedAndArrays {
+public class StringExtended {
     public static void main(String[] args) {
         // Scanner
         // Initialize the scanner class.
