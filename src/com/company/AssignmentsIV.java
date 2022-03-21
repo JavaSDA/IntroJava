@@ -89,21 +89,43 @@ public class AssignmentsIV {
         // Write a program that accepts a year from a user and tells the user if the year is a leap year or not.
 
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter a year: ");
-        int year = scanner.nextInt();
+//
+//        System.out.print("Enter a year: ");
+//        int year = scanner.nextInt();
 
 //        boolean isLeap = year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
 
 //        System.out.println(isLeap ? "Leap year" : "not leap year");
-        boolean isLeap = LocalDate.of(year, Month.DECEMBER, 2).isLeapYear();
-        System.out.println(isLeap ? "local leap year": "not leap");
+//        boolean isLeap = LocalDate.of(year, Month.DECEMBER, 2).isLeapYear();
+//        System.out.println(isLeap ? "local leap year": "not leap");
+
+        // 10 mins.
+        // Write a program that returns the number or amount of hours between two (o'clock) times entered by the user.
+
+        System.out.print("Enter the start hour: ");
+        String userStart = scanner.nextLine(); // 5:00 AM
+
+        System.out.print("Enter the end hour: ");
+        String userEnd = scanner.nextLine(); // 8:00 AM
+
+        // Get the value of the hours
+        int startHour = Integer.parseInt(userStart.split(":")[0]);
+        int endHour = Integer.parseInt(userEnd.split(":")[0]);
+
+        // If a time entered is in the morning assign it 12 else assign it 24
+        // to make it easy to compare numerically.
+        int amPmOne = userStart.split(" ")[1].equals("AM") ? 12 : 24;
+        int amPmTwo = userEnd.split(" ")[1].equals("AM") ? 12 : 24;
+
+        // subtract and find out the difference
+        int difference =(endHour+amPmTwo) - (startHour+amPmOne);
+        if (amPmOne < amPmTwo && startHour > endHour) difference +=12;
 
 
+        System.out.println(difference == 0 ? "No time has passed." : difference + " hours");
 
     }
 
 
-    // 10 mins.
-    // Write a program that returns the number or amount of hours between two (o'clock) times entered by the user.
+
 }
