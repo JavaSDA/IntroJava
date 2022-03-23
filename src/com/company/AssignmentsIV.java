@@ -1,9 +1,9 @@
 package com.company;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.Month;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
@@ -89,7 +89,7 @@ public class AssignmentsIV {
         // Write a program that accepts a year from a user and tells the user if the year is a leap year or not.
 
         Scanner scanner = new Scanner(System.in);
-//
+
 //        System.out.print("Enter a year: ");
 //        int year = scanner.nextInt();
 
@@ -102,6 +102,7 @@ public class AssignmentsIV {
         // 10 mins.
         // Write a program that returns the number or amount of hours between two (o'clock) times entered by the user.
 
+/*
         System.out.print("Enter the start hour: ");
         String userStart = scanner.nextLine(); // 5:00 AM
 
@@ -114,7 +115,7 @@ public class AssignmentsIV {
 
         // If a time entered is in the morning assign it 12 else assign it 24
         // to make it easy to compare numerically.
-        int amPmOne = userStart.split(" ")[1].equals("AM") ? 12 : 24;
+        int amPmOne = userStart.split(" ")[1].equals("AM") ? 12 : 24; // 8:00 AM => ["8:00", "AM"]
         int amPmTwo = userEnd.split(" ")[1].equals("AM") ? 12 : 24;
 
         // subtract and find out the difference
@@ -123,9 +124,54 @@ public class AssignmentsIV {
 
 
         System.out.println(difference == 0 ? "No time has passed." : difference + " hours");
+*/
+
+        // " "
+        // The black boy => ["The", "black boy"] => ["The", "black", "boy"]
+
+
+
+        // Write a Java program to get year and months between two dates.
+
+        LocalDate today = LocalDate.now();
+        LocalDate userDay = LocalDate.of(2020, Month.JUNE, 21);
+        Period difference = Period.between(userDay, today);
+
+        System.out.println("The difference between " +
+                userDay + " - " +
+                today + ": " +
+                difference.getYears() + " years " + " and " + difference.getMonths() + " months.");
+        System.out.println(difference.getDays());
+
+        //Write a Java program to calculate the difference between two dates in days.
+//        LocalDate userDate1 = LocalDate.of(2022, 1, 3);
+        LocalDate userDate1 = LocalDate.of(2020, 6, 23);
+        LocalDate userDate2 = LocalDate.of(2022, 3, 22);
+
+
+        long numberOfDaysBetween = Math.abs(ChronoUnit.MONTHS.between(userDate1, userDate2));
+
+        System.out.println("The difference between them in days is: " + numberOfDaysBetween);
+
+
+        // Task 1: 10 mins.
+        // Write a program to calculate the age of a person, considering that they (the user) only enters
+        // their date of birth
+
+        // Task 2: 10 mins.
+        // Write a program to calculate the number of days between two specified years. (beginning of each year is
+        // the input).
+
+
+
+        //        boolean isLeap = LocalDate.of(year, Month.DECEMBER, 2).isLeapYear();
+//        System.out.println(isLeap ? "local leap year": "not leap");*/
+        // 10 mins.
+        // Write a program that returns the number or amount of hours between two (o'clock) times entered by the user.
+
+
+
+
 
     }
-
-
-
 }
