@@ -171,6 +171,43 @@ public class AssignmentsIV {
 
 
 
+        // Arrays.
+        // Task 1: 15 min
+        // Write a program that takes in the weight and height of 5 people from the user and returns
+        // the average BMI of the group
+
+        // Task 2: 15 min
+        // Given a string from the user return the character and count of the character that occurs the most
+        // in the string.
+
+        // Task 3: 15 min
+        // You're sent to a grocery store with the following items on your list ["Bananas", "Bread", "Fish"]
+        // The cost of the items in the store is [12, 5, 10], your current cash-in-hand is 20 dollars. Which
+        // of the items can you safely without needing extra cash.
+        // Priority - Bananas[least], Fish[second], Bread[First]
+        // N.B. you can't buy half of an item.
+        // You can buy -- and -- and you'll be left with -- dollars.
+
+        // Dates - 15 mins
+        // Receive the year, month and day from the user separately.
+        // - The year should be a four-digit number.
+        // - Assume that the date is correct
+        // Determine if the date is a magic date
+        // A magic date occurs when:
+        // - m * d  is a 1-digit number that matches the last digit of the year. OR
+        // - m * d is a 2-digit number that matches the last 2 digits of the year. OR
+        // - m * d is a 3-digit number that matches the last 3 digits of the year.
+
+        // For example, 1 2 2012
+
+        // return the output interactively to the user.
+
+        // Flowchart
+        // 10 mins.
+        // Draw a flowchart that checks if 2 numbers that are entered are divisible by 5 without remainder.
+
+        // 15 mins.
+        // Draw a flowchart to return fibonacci numbers between 1 - 30.
 
 
     }
