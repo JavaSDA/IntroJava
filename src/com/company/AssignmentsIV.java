@@ -183,10 +183,20 @@ public class AssignmentsIV {
         // Task 3: 15 min
         // You're sent to a grocery store with the following items on your list ["Bananas", "Bread", "Fish"]
         // The cost of the items in the store is [12, 5, 10], your current cash-in-hand is 20 dollars. Which
-        // of the items can you safely without needing extra cash.
+        // of the items can you safely buy without needing extra cash.
         // Priority - Bananas[least], Fish[second], Bread[First]
         // N.B. you can't buy half of an item.
         // You can buy -- and -- and you'll be left with -- dollars.
+
+        String[] groceryList = {"Bananas", "Bread", "Fish"};
+        int[] prices = {12, 5, 10};
+
+        int totalCost = prices[2] + prices[1];
+
+        System.out.println("You can buy Fish and Bread and you'll be left with " + (20 - totalCost) + " dollars");
+
+
+
 
         // Dates - 15 mins
         // Receive the year, month and day from the user separately.
