@@ -67,8 +67,13 @@ public class MethodsIntro {
 
 //        System.out.println(factorial(5));
 
-        System.out.println(lengthOfString("Hello"));
+//        System.out.println(lengthOfString("Hello"));
+
+//        System.out.println("The sum of the numbers is: " + sumOfNumbers(6));
+
+        System.out.println("The reverse is: " + stringReverse("hello"));
     }
+
 
     // methods - is a vehicle or errand boy that you pass a series of instructions to
     // and it will return the output or result to you.
@@ -220,13 +225,31 @@ public class MethodsIntro {
         return lengthOfString(value.substring(1)) + 1;
     }
 
+    // shortcuts for comments.
+    // ctrl + /
+    // cmd + /
+
     // Home tasks:
     // Using recursion, write a method that takes a number as a parameter and
     // returns the total sum between one and that number;
     // upToNumber(8) -> 1 + 2 + ... + 8
 
+    public static int sumOfNumbers(int n) {
+//        if (n == 0) {
+//            return n;
+//        }
+//        return n + sumOfNumbers(n - 1); // 15 + 14 + 13 + .. 1
+        return n == 0 ? n : n + sumOfNumbers(n - 1);
+    }
+
     // Using recursion, write a method that tasks a string as a parameter and
     // returns the reverse of the string.
 
+    public static String stringReverse(String text) {
+        if (text.equals("")) {
+            return "";
+        }
+        return stringReverse(text.substring(1)) + text.charAt(0);
+    }
 
 }
