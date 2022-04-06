@@ -3,6 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+
 	    // What is Java?
         // Java is an object-oriented programming language that allows us to model
         // real life functionality as objects in our code.
