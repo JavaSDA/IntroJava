@@ -5,8 +5,9 @@ public class Person {
     // Define the properties or attributes of a person
     private String name;
     private int age;
-//    private float height;
-//    private float weight;
+    private float height;
+    private float weight;
+
 
 
     // Constructor - A constructor is a utility that allows us to
@@ -45,5 +46,26 @@ public class Person {
         age++;
     }
 
+    public float getHeight() {
+        return height;
+    }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    // BMI formula = kg / m^2 (weight / height^2)
+
+    public float getBMI() {
+        return weight / (height * height);
+    }
 
 }

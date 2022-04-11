@@ -1,12 +1,15 @@
-package com.company.oop;
+package com.company.oop.car;
 
 public class Car {
 
     // Define the attributes of the object
-    private String color = "BLUE";
-    private String model = "w1";
+
     private int numOfTires = 4;
     private boolean engineOn = false;
+
+    public Car(int numOfTires) {
+        this.numOfTires = numOfTires;
+    }
 
     // define their behaviours
     // start engine
